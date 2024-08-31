@@ -56,20 +56,18 @@
             <button style="height: 40px; width: 100px; margin-right: 30px; background-color:white; border-top-left-radius: 5px; border-top-right-radius: 5px; margin-bottom: 0;" id="studies" onclick="showes()" onmouseover="change(this)" onmouseout="changeback(this) "> Schooling </button>
         
             <button style="height: 40px; width: 100px; margin-right: 30px; background-color: white;border-top-left-radius: 5px; border-top-right-radius: 5px; margin-bottom: 0;"id="experiences" onclick="profiles()" onmouseover="change(this)" onmouseout="changeback(this)"> Media </button>
-            
-                <div id="muetreo" style="visibility: hidden; font-family: Mono, monospace;  width:60em; margin-bottom: 50px; margin-right: 50px; margin-top:0;"> </div>
-    
-    
-    
+            <button style="height: 40px; width: 100px; margin-right: 30px; background-color: white;border-top-left-radius: 5px; border-top-right-radius: 5px; margin-bottom: 0;"id="experiences" onclick="proyects()" onmouseover="change(this)" onmouseout="changeback(this)"> Proyects </button>
         </div>
     </div> 
+    <div id="muetreo" style="visibility: hidden; font-family: Mono, monospace;  width:60em; margin-bottom: 50px; margin-right: 50px; margin: 30px 20px 50px 50px;"> </div>
     
 
 
 
     <script>
         function change(but){
-            but.style.backgroundColor = 'black'
+            background: 
+            but.style.background= 'black'
             but.style.color = 'white'
             but.style.borderBottom = 'white'
 
@@ -130,6 +128,15 @@
             })
 
             
+
+        }
+        function proyects(){
+            let div = document.querySelector('#muetreo')
+            div.innerHTML = ' '
+            div.style.visibility = 'visible'
+            p = document.createElement('h4')
+            p.innerHTML = 'Write me. . .'
+            div.append(p)
 
         }
 
