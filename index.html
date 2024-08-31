@@ -111,19 +111,14 @@
                 let icon = ['fa-brands fa-github','fa-brands fa-linkedin']
                 let header = document.createElement('i')
                 let lin = document.createElement('a')
-
-                header.setAttribute("class", icon[index])
-                header.style.marginTop = '5px'
-                div.appendChild(header)
-
                 lin.href = element
-                console.log(element)
-                lin.innerHTML = element
-                lin.style.textDecoration = 'none'
-                lin.style.color = 'black'
-                lin.style.display = 'block'
-                lin.style.marginTop = '5px'   
-                div.appendChild(lin)
+                header.setAttribute("class", icon[index])
+                header.innerHTML = `&nbsp  <a href='${element}' style="color: black; text-decoration: none"; target="_blank">${element}<\a>`
+                header.style.marginTop = '15px'
+                spa = document.createElement('br')
+                div.appendChild(header)
+                div.append(spa)
+                div.append(spa)
 
             })
 
