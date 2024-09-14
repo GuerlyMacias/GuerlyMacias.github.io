@@ -51,9 +51,14 @@
 
         
     </div>
-    <div id="muetreo" style="visibility: hidden; font-family: Mono, monospace; margin: 30px 20px 50px 50px; width: 100vw; text-align: center; align-items: center;"> </div>
+
+    <div id="muetreo" style="visibility: hidden; font-family: Mono, monospace; width: 100vw; display: block; text-align: center;"</div>
+
+
+    
     <script>
         function change(but){
+
             but.style.background= 'black'
             but.style.color = 'white'
             but.style.borderBottom = 'white'
@@ -82,7 +87,6 @@
                 graded.style.paddingLeft = '15px'
                 graded.innerHTML = Grades[index]
                 institute.innerHTML = elemento
-                institute.style.width = '40em'
 
                 institute.style.background = 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 55%, rgba(0,212,255,1) 100%)'
 
