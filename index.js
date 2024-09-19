@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
-    console.log("here")
+        document.addEventListener('mousemove',(event)=>{
+        Creator(event.clientX,event.clientY)
+    })
 })
 function change(but){
     but.style.boxShadow = '1px 4px 10px 2px rgb(127, 125, 125)'
@@ -104,5 +106,15 @@ function proyects(but){
     let butthree = document.querySelector('#media2')
     butthree.style.backgroundColor= 'black'
     butthree.style.color = 'white'
+
+}
+function Creator(x,y){
+    x= x-40
+    y = y-40
+    let mover = document.querySelector('#mover')
+    mover.style.visibility = 'visible'
+    mover.style.position = 'absolute'
+    mover.style.top = y+'px'
+    mover.style.left = x+'px'
 
 }
