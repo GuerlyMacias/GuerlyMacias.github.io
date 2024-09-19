@@ -109,8 +109,8 @@ function proyects(but){
 
 }
 function Creator(x,y){
-    x= x-40
-    y = y-40
+    x= x+40
+    y = y+40
     let mover = document.querySelector('#mover')
     mover.style.visibility = 'visible'
     mover.style.position = 'absolute'
