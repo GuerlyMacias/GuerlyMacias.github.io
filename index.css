@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: ifme;
+    src: url(If.ttf);
+}
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+}
+
+h1{
+    font-family: ifme;
+    letter-spacing: 0.5rem;
+}
+h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#mytab{
+    background-color:black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tabbut{
+    margin-left: 10px;
+    width: 8rem;
+    margin-right: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    z-index: 2;
+
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: white;
+    border-right: 0.1px solid rgb(127, 125, 125);
+    border-bottom: none;
+    box-shadow: 0.2px 2px 5px 1px rgb(127, 125, 125);
+    
+
+}
+
+#muetreo{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
