@@ -3,135 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <script src="https://kit.fontawesome.com/fa8776acd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" type="text/css" >
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <title>GuerlyMacias</title>
-    <style>
-        body{
-            color: white;
-            background-image: url("3dnetwork.jpg")
-    
-        }
-        #teo:before{
-            border-bottom: 5px solid black;
-        }
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="index.js" ></script>
 
-    </style>
-
+    <title>Guerly Macias F.</title>
 </head>
 <body>
-    <div style="text-align: center; font-family: Ubuntu, sans-serif;  width: 100vw; justify-content: center;">
-        <img style="border-radius: 50px;" src="itsme.jpg" height="300px">
+    <div>
+        <h1>WELCOME TO MY SITE</h1>
+        <img src="itsme.jpg" width="200rem" style="border-radius: 20px;">
+    <h4>Focused on achieving in each project. Always working to be better. I can program a website for you in any complexity.I do work everyday with Python, Django, Flask, Javascript, mySQL and a bit with C++. I teach programming languages in a special virtual enviroment.
+        <br>
+        📫 Contact me at <a href="mailto:guerlytrabajo@gmail.com">guerlytrabajo@gmail.com</a>
+        📍 Barranquilla Colombia
+        <br>
+    Do not hesitate on call me!</h4>
 
-        <h1 style="font-family: Rowdies, sans-serif;">Guerly Macias F.</h1>
-        <p style="font-family: DM Serif Display, serif;"></p>
-            Focused on achieving in each project. Always working to be better.
-            I can program a website for you in any complexity.I do work everyday with Python, Django, Flask, Javascript, mySQL and a bit with C++.
-            I teach programming languages in a special virtual enviroment.
-            <br>
-            <strong>Do not hesitate on call me!</strong>
-            <br>
-        </p>
-        <hr style="width: 90vw;">
-        <p style="font-family: DM Serif Display, serif;" ></p>
-            📫 Contact me at guerlytrabajo@gmail.com 
-            <br>
-            📍 Barranquilla Colombia
-        </p>
-        <button style="height: 40px; width: 100px; margin-right: 30px; background-color:white; border-top-left-radius: 5px; border-top-right-radius: 5px; margin-bottom: 0;" id="studies" onclick="showes()" onmouseover="change(this)" onmouseout="changeback(this) "> Schooling </button>
+    <div id="mytab">
+        <button class="tabbut" id="studies" onclick="showes(this)" onmouseover="change(this)" onmouseout="changeback(this) "> Schooling </button>
             
-        <button style="height: 40px; width: 100px; margin-right: 30px; background-color: white;border-top-left-radius: 5px; border-top-right-radius: 5px; margin-bottom: 0;"id="experiences" onclick="profiles()" onmouseover="change(this)" onmouseout="changeback(this)"> Media </button>
+        <button class="tabbut"  id="media2" onclick="profiles(this)" onmouseover="change(this)" onmouseout="changeback(this)"> Media </button>
         
-        <button style="height: 40px; width: 100px; margin-right: 30px; background-color: white;border-top-left-radius: 5px; border-top-right-radius: 5px; margin-bottom: 0;"id="experiences" onclick="proyects()" onmouseover="change(this)" onmouseout="changeback(this)"> Proyects </button>
-
-
-        
+        <button class="tabbut"  id="experiences" onclick="proyects(this)" onmouseover="change(this)" onmouseout="changeback(this)"> Experiences </button>
     </div>
-
     <div id="muetreo" style="visibility: hidden; font-family: Mono, monospace; width: 100vw; display: block; text-align: center;"</div>
 
 
-    
-    <script>
-        function change(but){
-
-            but.style.background= 'black'
-            but.style.color = 'white'
-            but.style.borderBottom = 'white'
-            but.style.borderColor = 'white'
-
-
-        }
-        function changeback(but){
-            but.style.backgroundColor = 'white'
-            but.style.color = 'black'
-
-        }
-        function showes(){
-            let div = document.querySelector('#muetreo')
-            div.innerHTML = ' '
-            div.style.visibility = 'visible'
-
-            let institution = ["CS50"
-            ,"Servicio Nacional de Aprendizaje"
-            ,"Fundacion Universitaria San Martin"]
-            
-            institution.forEach((elemento, index)=>{
-                let Grades = [" 'Introduction to Computer Science' - 'Python' - 'DataBases (sqlite, mySQL, PostgreSQL)' ", "Analysis and Development of software", "Business administration"]
-                let institute =document.createElement('h4')
-                let graded = document.createElement('a')
-                graded.style.paddingLeft = '15px'
-                graded.innerHTML = Grades[index]
-                institute.innerHTML = elemento
-
-                institute.style.background = 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 55%, rgba(0,212,255,1) 100%)'
-
-                institute.style.color = 'white'
-                institute.style.textAlign = 'center'
-
-                div.appendChild(institute)
-                div.appendChild(graded)
-                })
-        }
-        function profiles(){
-            let div = document.querySelector('#muetreo')
-            div.innerHTML = ' '
-            div.style.visibility = 'visible'
-            let mymedia=["https://github.com/GuerlyMacias","https://www.linkedin.com/in/guerly-macias-9b14b1285/"]
-            mymedia.forEach((element,index)=>{
-                let icon = ['fa-brands fa-github','fa-brands fa-linkedin']
-                let header = document.createElement('i')
-                let lin = document.createElement('a')
-                lin.href = element
-                header.setAttribute("class", icon[index])
-                header.innerHTML = `&nbsp  <a href='${element}' style="color: white; text-decoration: none"; target="_blank">${element}<\a>`
-                header.style.marginTop = '15px'
-                spa = document.createElement('br')
-                div.appendChild(header)
-                div.append(spa)
-                div.append(spa)
-
-            })
-
-            
-
-        }
-        function proyects(){
-            let div = document.querySelector('#muetreo')
-            div.innerHTML = ' '
-            div.style.visibility = 'visible'
-            p = document.createElement('h4')
-            p.innerHTML = 'Write me. . .'
-            div.append(p)
-
-        }
-
-
-
-    </script>
-
+    </div>
+</body>
 </html>
