@@ -1,7 +1,10 @@
+
 document.addEventListener('DOMContentLoaded',()=>{
-        document.addEventListener('mousemove',(event)=>{
+    //caputando posicion del mouse
+    document.addEventListener('mousemove',(event)=>{
         Creator(event.clientX,event.clientY)
     })
+    console.log("here")
 })
 function change(but){
     but.style.boxShadow = '1px 4px 10px 2px rgb(127, 125, 125)'
@@ -14,8 +17,6 @@ function changeback(but){
 
 }
 function showes(mybut){
-
-
     let div = document.querySelector('#muetreo')
     div.innerHTML = ' '
     div.style.visibility = 'visible'
@@ -108,13 +109,11 @@ function proyects(but){
     butthree.style.color = 'white'
 
 }
+///nojoda cree una vaina que se mueve en la ventana
 function Creator(x,y){
-    x= x+50
-    y = y+50
     let mover = document.querySelector('#mover')
     mover.style.visibility = 'visible'
-    mover.style.position = 'absolute'
-    mover.style.top = y+'px'
-    mover.style.left = x+'px'
+    mover.style.setProperty('--mouse-x',`${x-40}px`)
+    mover.style.setProperty('--mouse-y',`${y-40}px`)
 
 }
