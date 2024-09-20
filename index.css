@@ -10,6 +10,7 @@ body{
     text-align: center;
     align-items: center;
     padding: 0;
+    overflow: scroll;
 
 }
 
@@ -66,17 +67,21 @@ h4{
 #body:hover::before{
     opacity: 1;
 }
+#contenedor{
+    overflow: hidden;
+}
+
 
 
 /* // ojo a todo lo que use aqui z-index -1 para ese div dejarlo atras y poder dar click a lo de adelante */
 /* gradiente para crear el glow efect */
 /* igual de importante las ubicaciones y el ancho ya que como no tengdra efecto puede ocuparlo todo */
-#mover{
+#contenedor::before{
+    content: " ";
     background:radial-gradient(rgb(6, 143, 241) ,transparent 99%);
     border-radius: 80%;
     position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    z-index: -3;
     top: var(--mouse-y);
     left: var(--mouse-x);
     height: 200px;
@@ -88,4 +93,3 @@ h4{
 
 
 }
-
