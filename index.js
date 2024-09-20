@@ -112,7 +112,7 @@ function proyects(but){
 ///nojoda cree una vaina que se mueve en la ventana
 function Creator(x,y){
     let mover = document.querySelector('#contenedor')
-    mover.style.setProperty('--mouse-x',`${x}px`)
-    mover.style.setProperty('--mouse-y',`${y}px`)
+    mover.style.setProperty('--mouse-x',`${x-80}px`)
+    mover.style.setProperty('--mouse-y',`${y-80}px`)
 
 }
