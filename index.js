@@ -113,7 +113,7 @@ function proyects(but){
 function Creator(x,y){
     let mover = document.querySelector('#mover')
     mover.style.visibility = 'visible'
-    mover.style.setProperty('--mouse-x',`${x-40}px`)
-    mover.style.setProperty('--mouse-y',`${y-40}px`)
+    mover.style.setProperty('--mouse-x',`${x-100}px`)
+    mover.style.setProperty('--mouse-y',`${y-90}px`)
 
 }
