@@ -6,7 +6,7 @@ function school(){
     let div = document.querySelector('#shows')
     div.innerHTML = ' '
 
-    let institution = ["CS50","Servicio Nacional de Aprendizaje","Fundacion Universitaria San Martin"]
+    let institution = ["Harvard Online CS50","Servicio Nacional de Aprendizaje","Fundacion Universitaria San Martin"]
     
     institution.forEach((elemento, index)=>{
         let Grades = [" 'Introduction to Computer Science' - 'Python' - 'DataBases (sqlite, mySQL, PostgreSQL)' ", "Analysis and Development of software", "Business administration"]
