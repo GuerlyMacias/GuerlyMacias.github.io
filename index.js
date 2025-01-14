@@ -41,9 +41,9 @@ function platform(){
     div.innerHTML = ' '
 
     let a = document.createElement('a')
-    a.href = '#'
+    a.href = 'https://www.tusclases.co/profesores/tecnologia-online/fundamentos-programacion-websites-construccion-2117666?utm_source=mail_recomendacion&utm_medium=mail&utm_campaign=mail_recomendacion&cee=EE19BD541EA579777DA49B712EB3C8546B48B2F3370C8FAB'
     a.target = '_blank'
-    a.innerHTML = 'Soon . . .'
+    a.innerHTML = 'Class'
     a.style.letterSpacing = '0.3rem'
     div.append(a)
 
