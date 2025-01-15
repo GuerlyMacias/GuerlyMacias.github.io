@@ -46,5 +46,10 @@ function platform(){
     a.innerHTML = 'Enroll a Class'
     a.style.letterSpacing = '0.3rem'
     div.append(a)
+    let b = document.createElement('a')
+    b.href = 'https://preply.com/en/tutor/5922618'
+    b.target = '_blank'
+    b.innerHTML = 'Enroll a Free Start Class'
+    div.append(b)
 
 }
