@@ -35,6 +35,14 @@ function store(){
     a.innerHTML = '<h4>www.tesorosdivertidos.net</h4>'
     a.style.letterSpacing = '0.3rem'
     div.append(a)
+    let br = document.createElement('br')
+    div.append(br)
+    let b = document.createElement('a')
+    b.href = 'https://jessimaibuk.pythonanywhere.com/portugues/login/?next=/portugues/'
+    b.target = '_blank'
+    b.innerHTML = 'https://jessimaibuk.pythonanywhere.com'
+    div.append(b)
+    
 }
 function platform(){
     let div = document.querySelector('#shows')
