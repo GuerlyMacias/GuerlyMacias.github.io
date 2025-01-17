@@ -40,7 +40,7 @@ function store(){
     let b = document.createElement('a')
     b.href = 'https://jessimaibuk.pythonanywhere.com/portugues/login/?next=/portugues/'
     b.target = '_blank'
-    b.innerHTML = 'https://jessimaibuk.pythonanywhere.com'
+    b.innerHTML = 'jessimaibuk.pythonanywhere.com'
     div.append(b)
     
 }
