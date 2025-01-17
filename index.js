@@ -32,7 +32,7 @@ function store(){
     let a = document.createElement('a')
     a.href = 'http://tesorosdivertidos.net'
     a.target = '_blank'
-    a.innerHTML = '<h4>www.tesorosdivertidos.net</h4>'
+    a.innerHTML = 'www.tesorosdivertidos.net'
     //a.style.letterSpacing = '0.3rem'
     div.append(a)
     let br = document.createElement('br')
@@ -51,7 +51,7 @@ function platform(){
     let a = document.createElement('a')
     a.href = 'https://www.tusclases.co/profesores/tecnologia-online/fundamentos-programacion-websites-construccion-2117666?utm_source=mail_recomendacion&utm_medium=mail&utm_campaign=mail_recomendacion&cee=EE19BD541EA579777DA49B712EB3C8546B48B2F3370C8FAB'
     a.target = '_blank'
-    a.innerHTML = 'Enroll a Class'
+    a.innerHTML = 'Enroll a Class en tusclases.co '
     //a.style.letterSpacing = '0.3rem'
     div.append(a)
     let br = document.createElement('br')
@@ -59,7 +59,7 @@ function platform(){
     let b = document.createElement('a')
     b.href = 'https://preply.com/en/tutor/5922618'
     b.target = '_blank'
-    b.innerHTML = 'Enroll a Free Start Class'
+    b.innerHTML = 'Enroll a Free Start Class en Perply.com'
     div.append(b)
 
 }
