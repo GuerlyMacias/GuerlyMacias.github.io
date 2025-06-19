@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fa8776acd7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="index.js" ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <title>Marketing/Desarrollo</title>
+</head>
+<body>
+    <header>
+        <img src="logovertical.png" alt="" id="logo">     
+        <button id="abrir_menu" onclick="showbar()"><i class="fa-solid fa-bars"></i></button>
+        <nav id="firtsnav">
+            <button id="cerrarmenu" onclick="hidenav()"><i class="fa-solid fa-xmark"></i></button>
+            <ul id="barnav">
+                <li> <a href="mailto:guerlytrabajo@gmail.com" ><i class="fa-brands fa-google" style="color: white;"></i>Mail-me</a></li>
+                <li><a href="https://github.com/GuerlyMacias" target="_blank"><i class="fa-brands fa-github" style="color: white;"></i>Github</a></li>
+                <li><a href="https://www.linkedin.com/in/guerly-macias-9b14b1285/" target="_blank"><i class="fa-brands fa-linkedin" style="color: white;"></i>LinkedIn</a> </li>
+                <li><a href="https://www.paypal.com/donate/?hosted_button_id=JBEM2QP7F5ZME" target="_blank"><i class="fa-brands fa-paypal" style="color: white;"></i>Donate</a></li>
+                <li id="language" onclick="changeLanguage()">Change to English</li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="continer1">
+        <div class="normal">
+            <h1 id="saludo">BIENVENIDO A MI PORTAFOLIO</h1>
+            
+            <div class="spanish">
+                <p>11 años de experiencia en asistencia digital en modalidad remota. 
+                    Yo tengo una combinación de habilidades técnicas necesarias para el mantenimiento y optimización de plataformas digitales, así como las habilidades de marketing y gestión de eventos necesarias para apoyar las actividades promocionales.
+                    <br>
+                    <br>
+                    Rol multifacético que abarca la gestión técnica de plataformas web, la implementación de estrategias de marketing digital y la construcción de comunidades en línea. 
+                    </p>
+        
+            </div>
+            <div class="english">
+                <p>
+                11 years of experience in remote digital support.
+                I have a combination of technical skills necessary for the maintenance and optimization of digital platforms, as well as the marketing and event management skills necessary to support promotional activities.
+                <br>
+                <br>
+                Multifaceted role that covers the technical management of web platforms, the implementation of digital marketing strategies and the construction of online communities.
+                    </p>
+            </div>
+
+        </div>
+        <div class="ruta">
+            <div class="myefect">
+                <div class="secciones estudios" onclick="">
+
+                    <h1 class="spanish" onclick="estudios()"> Formación Profesional</h1>
+                    <h1 class="english" onclick="estudios()">Schooling Professional</h1>
+                </div>
+            </div>
+            <div class="myefect">
+                <div class="secciones proyectos">
+                    <h1 class="spanish" onclick="skills()">Herramientas</h1>
+                    <h1 class="english" onclick="skills()">Tools</h1>
+                </div>
+
+            </div>
+            <div class="myefect">
+                <div class="secciones websites">
+        
+                    <h1 class="spanish" onclick="webs()">Sitios Web Publicados</h1>
+                    <h1 class="english" onclick="webs()">Websites</h1>
+                </div>
+            </div>
+            <div class="myefect">
+                <div class="secciones estudiantes">
+                    
+                    <h1 class="spanish"><a target="_blank" href="https://www.tusclases.co/profesores/tecnologia-online/fundamentos-programacion-websites-construccion-2117666?utm_source=mail_recomendacion&utm_medium=mail&utm_campaign=mail_recomendacion&cee=EE19BD541EA579777DA49B712EB3C8546B48B2F3370C8FAB" ><i class="fa-solid fa-star" style="color: yellow;" ></i> Estudia conmigo</a> </h1>
+                    <h1 class="english">
+                        <a class="out" href="https://www.tusclases.co/profesores/tecnologia-online/fundamentos-programacion-websites-construccion-2117666?utm_source=mail_recomendacion&utm_medium=mail&utm_campaign=mail_recomendacion&cee=EE19BD541EA579777DA49B712EB3C8546B48B2F3370C8FAB"><i class="fa-solid fa-star" style="color: yellow;" ></i> Become my Student</a> </h1>
+                    <!-- Agregar form para recibir sin back end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myinfo">
+        <div class="cards">
+            <div class="logos">
+                    <img src="./Logo-nueva-san-martin-300x92.png" alt="">
+                <h3 class="spanish">Fundacion Universitaria San Martin</h3>
+                <h3 class="english">San Martin University Foundation</h3>
+                <br>
+                <h1 class="spanish grade">Administración de Empresas</h1>
+                <h1 class="english grade">Business administration</h1>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="logos">
+                <img src="./logo-sena-naranja-png-2022.png" alt="" width="50px">
+                <h3 class="spanish">Servicio Nacional de Aprendizaje</h3>
+                <h3 class="english">National Learning Service</h3>
+                <br>
+                <h1 class="spanish grade">Análisis y Desarrollo de software</h1>
+                <h1 class="english grade">Analysis and Development of software</h1>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="logos">
+                <img src="./pngwing.com.png" alt="" width="40px">
+                <h3>Harvard Online</h3>
+                <br>
+                <h1 class="spanish grade">'Introducción a Ciencia Computación'
+                    <br>
+                    Python-JS-Bases de datos</h1>
+                <h1 class="english grade">'Introduction to Computer Science'
+                    <br>
+                    Python-JS-DataBases</h1>
+            </div>
+        </div>
+                    
+    </div>
+    <div class="myinfo myinfo2">
+
+        <div class="cards">
+            <div class="envol">
+            <h1>Marketing</h1>
+            <br>
+            <hr style="background-color: blue;">
+                <div class="text">
+                    <ul>
+                        <li>GoHighLevel</li>
+                        <li>Zapier</li>
+                        <li>MetaAds</li>
+                        <li>GoogleAds</li>
+                        <li>Shopify</li>
+                        <li>GoogleAds</li>
+                        <li>Payments Platforms</li>
+                        <li>MicrosfotOffice</li>
+                        <li>Canva</li>
+                        <li>CorelDraw</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="envol">
+                <h1 class="spanish">Programación</h1>
+                <h1 class="english">Programmation</h1>
+                <br>
+                <hr style="background-color: blue;">
+                <div class="text">
+                    <ul>
+                        <li>Python</li>
+                        <li>Django, Flask</li>
+                        <li>HTML/CSS/JS</li>
+                        <li>ReactNative</li>
+                        <li>Github</li>
+                        <li>Wordpress</li>
+                        <li>WixStudio</li>
+                        <li>Domains Names</li>
+                        <li>DNS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    <div class="myinfo myinfo3">
+        <div class="cards1 webs">
+            <h3 class="spanish"> <a id="narnia1" href="https://www.tesorosdivertidos.net/">Entra a mi Narnia</a></h3>
+        </div>
+    </div>
+    
+
+
+    
+</body>
+</html>

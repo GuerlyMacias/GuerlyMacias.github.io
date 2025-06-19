@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Sigmar&display=swap');
+/* :root {
+    --topp: #1e90ff;
+    --lefter: #ffffff;
+  } */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra  */
+header{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#firtsnav{
+    display: flex;
+    background-color: white;
+
+}
+
+img{
+    max-width: 90px;
+
+}
+#barnav{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+nav :is(a){
+    text-decoration: none;
+    color: black;
+}
+
+nav :is(li){
+    cursor: pointer;
+}
+
+
+/* Contenedor */
+.continer1{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 47%, #0093e9 100%);
+    border: 0.5px solid white;
+} 
+
+
+
+/* Textos */
+.normal{
+    width: 75%;
+    margin: 30px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 12px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 1px 0.5px  black;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    animation: shower 5s linear 1;
+
+}
+/* activar despues */
+
+@keyframes shower {
+    from{
+        opacity: 0;
+        width: 30%;
+    }
+    to{
+        opacity: 1;
+        width: 80%;
+    }
+    
+} 
+
+#saludo{
+    font-size: 1.4rem;
+    font-family: "Sigmar", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white ;
+    text-shadow:  1px 1px #48bfe3,0.5px 0.5px 0.2px black,;
+    animation: entry 5s ease  1;
+
+}
+
+@keyframes entry {
+    from{
+        font-size: 0.1rem;
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+        font-size: 1.4rem;
+        
+    }
+    
+} 
+
+
+/* Lenguaje */
+.english{
+    display: none;
+
+}
+
+.visibled{
+    display: block;
+}
+
+
+/* Ruta */
+.ruta{
+    display: flex;
+    margin: 20px; 
+    padding: 10px;
+    justify-content:space-around ;
+    position: relative;
+    
+}
+.secciones{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+
+.secciones :is(h1){
+    font-size: 1rem;
+    font-family: "Sigmar", serif;
+    color: white;
+    font-style: normal;
+    text-shadow: 1.5px 1px 5px #1c2541;
+
+}
+
+
+
+.secciones :is(.spanish, .english):hover{
+    font-size: 1.1rem;;
+
+}
+.out{
+    color: #48cae4;
+}
+
+
+.myinfo{
+    display: none;
+    padding: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box; 
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* height: var(--height); */
+}
+.cards{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    font-size: medium;
+    color: white;
+    min-width: 22%;
+    min-height: 100%;
+
+
+}
+.cards:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(25deg,#42B4D8,yellow,#7ECFC8,#4BB8D5);
+    background-size: 1000%;
+    filter: blur(50px);
+    animation: degradado 20s linear infinite;
+    z-index: -1;
+
+}
+.checker{
+    visibility: hidden;
+    
+}
+.grade{
+    font-family: "Big Shoulders", sans-serif;
+    text-shadow: 0.5px 0.5px 0.5px white;
+}
+.logos{
+    font-size: small;
+    background-color: black;
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+
+}
+@keyframes degradado {
+    0%{
+        background-position: 0 0;
+
+    }
+    50%{
+        background-position: 400% 0;
+
+    }
+    0%{
+        background-position: 0 0;
+
+    }
+
+
+    
+}
+/* Mostrador */
+.mostrador{
+    display: flex;
+    display:block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+#abrir_menu, #cerrarmenu{
+    display: none;
+    border: none;
+    background-color: white;
+    font-size: large;
+    
+
+}
+
+.cards ul li{
+    list-style-type: none;}
+
+.envol{
+    background-color: black;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-shadow: 0.2px 0.2px 0.2px white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+.text{
+    justify-content: flex-start;
+    padding: 10px;
+}
+.webs{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.webs :is(a){
+    color: white;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px black;
+}
+
+.cards1{
+    width: 20rem;
+    height: 15rem;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    font-size: medium;
+    border-radius: 50%;
+    color: white;
+    transition: font-size 2s ease-in-out;
+
+
+}
+.cards1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(25deg,#42B4D8,yellow,#7ECFC8,#4BB8D5);
+    background-size: 800%;
+    filter: blur(35px);
+    animation: degradado 20s linear infinite;
+    z-index: -1;
+
+}
+.cards1:hover{
+    font-size: 1.2em;
+}
+.withme{
+    display: none;
+}
+.estudiantes :is(a){
+    color: white;
+    text-decoration: none;
+
+}
+.estudiantes :is(a:visited){
+    color: white;
+    text-decoration: none;
+
+}
+
+
+/* Movile response */
+@media screen and (max-width:600px) {
+
+    #abrir_menu{
+        display: block;
+    }
+    /* .continer{
+        background-repeat: repeat-x;
+        box-sizing: content-box;
+        height: none;
+    
+    } */
+
+    #firtsnav{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0,.5);
+    }
+
+    #barnav{
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+
+    .normal{
+        width: 80%;
+
+    }
+    .ruta{
+        flex-direction: column;
+    }
+    .cards{
+        margin: 10px auto;
+        height: auto;
+        min-width: 80%;
+    }
+}
